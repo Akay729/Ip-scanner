@@ -2,9 +2,11 @@ import subprocess
 import csv
 from datetime import datetime 
 
-addressList = []
+
 
 def ip_scanner():
+	addressList = []
+	
 	for ping in range(204,207):
 	    print('\n+---------------------------------------------------+',
 	    	'\n+----------------------NEW-IP-----------------------+',
@@ -36,4 +38,4 @@ def to_csv(addressList):
 	
 if __name__ == '__main__':
 	ipsArray = ip_scanner()
-	to_csv(addressList)
+	to_csv(ipsArrays)
